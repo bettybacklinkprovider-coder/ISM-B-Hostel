@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  /* Premium Golden Palette */
+  --color-gold-50: #fbf8eb;
+  --color-gold-100: #f4edd0;
+  --color-gold-200: #e9db9f;
+  --color-gold-300: #dac364;
+  --color-gold-400: #cca43b;
+  --color-gold-500: #cca43b;
+  --color-gold-600: #ab822b;
+  --color-gold-700: #856121;
+  --color-gold-800: #60441a;
+  --color-gold-900: #443013;
+  
+  /* Deep Dark Luxury Purples */
+  --color-brand-purple-950: #0f041c;
+  --color-brand-purple-900: #1b0a2e;
+  --color-brand-purple-800: #2a1245;
+  --color-brand-purple-700: #3b1d5c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.03em;
+  }
+
+  [dir="rtl"] {
+    --font-sans: "Tajawal", sans-serif;
+    --font-display: "Cairo", sans-serif;
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f041c;
+}
+::-webkit-scrollbar-thumb {
+  background: #ab822b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cca43b;
+}

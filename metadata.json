@@ -1,0 +1,6 @@
+{
+  "name": "ISM B Hostel",
+  "description": "Premium, modern, responsive website for ISM B Hostel with a luxurious dark purple and golden theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
