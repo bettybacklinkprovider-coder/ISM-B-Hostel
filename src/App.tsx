@@ -12,6 +12,7 @@ import BookingsDashboard from './pages/BookingsDashboard';
 
 // Types
 import { Booking } from './types';
+import majlisLobbyImg from './assets/images/ismb_majlis_lobby_1791365365240.jpg';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -142,7 +143,7 @@ export default function App() {
       dir={language === 'ar' ? 'rtl' : 'ltr'}
       style={{ 
         fontFamily: language === 'ar' ? 'Tajawal, sans-serif' : 'Plus Jakarta Sans, sans-serif',
-        backgroundImage: `linear-gradient(rgba(15, 4, 28, 0.94), rgba(15, 4, 28, 0.94)), url('https://res.cloudinary.com/k7og2ybq/image/upload/v1791365699/unnamed_2.jpg')`,
+        backgroundImage: `linear-gradient(rgba(15, 4, 28, 0.94), rgba(15, 4, 28, 0.94)), url('${majlisLobbyImg}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

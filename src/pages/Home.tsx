@@ -134,8 +134,8 @@ export default function Home({ onNavigate, onOpenBookingWithRoom, currency, lang
         {/* Low-opacity background photo */}
         <div className="absolute inset-0 opacity-25 mix-blend-overlay pointer-events-none">
           <ImageWithFallback 
-            src="https://res.cloudinary.com/k7og2ybq/image/upload/v1791365699/unnamed_2.jpg" 
-            fallbackSrc={grandMosqueImg}
+            src={grandMosqueImg} 
+            fallbackSrc={villaExteriorImg}
             alt="ISM B Hostel Premium Background" 
             className="h-full w-full object-cover"
           />
